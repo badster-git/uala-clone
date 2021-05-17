@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Uala clone
+This is a cloned website of Uala using NextJS. 
+
