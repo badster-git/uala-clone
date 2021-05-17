@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Link from "../components/Link";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 import { Container, Grid, Button } from "@material-ui/core";
 
 const useStyle = makeStyles({

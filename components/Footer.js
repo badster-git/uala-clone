@@ -1,5 +1,5 @@
 import Link from "./Link";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 import { SiInstagram } from "react-icons/si";
 import {
   FaFacebookSquare,

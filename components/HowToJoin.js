@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 import WaveContainer from "./WaveContainer";
 
 const useStyles = makeStyles({

@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 import UsesCard from "./UsesCard";
 import { USES_CARD_DATA } from "../data/USES_CARD_DATA";
 

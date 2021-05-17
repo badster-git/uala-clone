@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   marginContainer: {
@@ -55,19 +55,19 @@ export default function IndexTop() {
             className={classes.store}
             href="https://play.google.com/store/apps/details?id=ar.com.bancar.uala&hl=es_AR&gl=US"
           >
-            <img src="/images/playstore.svg" alt="Playstore icon" />
+            <img src="images/playstore.svg" alt="Playstore icon" />
           </a>
           <a
             className={classes.store}
             href="https://apps.apple.com/ar/app/ual%C3%A1/id1279808159"
           >
-            <img src="/images/apple-store.svg" alt="Apple icon" />
+            <img src="images/apple-store.svg" alt="Apple icon" />
           </a>
         </div>
       </div>
       <div>
         <div>
-          <img src="/images/home.gif" alt="Home animation" />
+          <img src="images/home.gif" alt="Home animation" />
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "./Link";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   root: {
