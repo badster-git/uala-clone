@@ -1,4 +1,4 @@
 module.exports = {
-    assetPrefix: '/uala-clone',
+    assetPrefix: '/uala-clone/',
     basePath: '/uala-clone'
 }
