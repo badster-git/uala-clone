@@ -38,7 +38,7 @@ export default function Phone() {
     <WaveContainer className={classes.phoneContainer}>
       <div className={classes.innerContainer}>
         <div className={classes.leftContainer}>
-          <img src="/images/phone.svg" alt="Phone svg" />
+          <img src="/phone.svg" alt="Phone svg" />
         </div>
         <div className={`${classes.rightContainer} ${classes.quote}`}>
           <div>
