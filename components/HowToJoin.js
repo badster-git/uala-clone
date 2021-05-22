@@ -87,7 +87,7 @@ export default function HowToJoin() {
           <div className={classes.downloadStepBar}></div>
           <div className={classes.downloadStep}>
             <div>
-              <img src="/images/app.svg" alt="App image" />
+              <img src="images/app.svg" alt="App image" />
             </div>
             <div className={classes.downloadStepText}>
               <span className={classes.stepNumber}>1.</span>
@@ -97,7 +97,7 @@ export default function HowToJoin() {
           </div>
           <div className={classes.downloadStep}>
             <div>
-              <img src="/images/doc.svg" alt="App image" />
+              <img src="images/doc.svg" alt="App image" />
             </div>
             <div className={classes.downloadStepText}>
               <span className={classes.stepNumber}>2.</span>
@@ -106,7 +106,7 @@ export default function HowToJoin() {
           </div>
           <div className={classes.downloadStep}>
             <div>
-              <img src="/images/delivery.svg" alt="App image" />
+              <img src="images/delivery.svg" alt="App image" />
             </div>
             <div className={classes.downloadStepText}>
               <span className={classes.stepNumber}>3.</span>
@@ -115,7 +115,7 @@ export default function HowToJoin() {
           </div>
           <div className={classes.downloadStep}>
             <div>
-              <img src="/images/contactless.svg" alt="App image" />
+              <img src="images/contactless.svg" alt="App image" />
             </div>
             <div className={classes.downloadStepText}>
               <span className={classes.stepNumber}>4.</span>
@@ -131,15 +131,15 @@ export default function HowToJoin() {
           <div className={classes.transfer}>
             <img
               style={{ marginRight: "24px" }}
-              src="/images/transfer-icon.svg"
+              src="images/transfer-icon.svg"
             />
             <span>Transfer CVU / CBU</span>
           </div>
           <div className={classes.transferLogos}>
-            <img src="/images/rapipago.svg" />
-            <img src="/images/pagofacil.svg" />
-            <img src="/images/telerecargas.svg" />
-            <img src="/images/cobro-express.svg" />
+            <img src="images/rapipago.svg" />
+            <img src="images/pagofacil.svg" />
+            <img src="images/telerecargas.svg" />
+            <img src="images/cobro-express.svg" />
           </div>
         </div>
       </div>

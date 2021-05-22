@@ -80,7 +80,7 @@ export default function CustomerSupport() {
       <div className={classes.rightContainer}>
         <div className={classes.image}>
           <img
-            src="/cellphone-contact.png"
+            src="images/cellphone-contact.png"
             alt="Cellphone with contact info"
           />
         </div>

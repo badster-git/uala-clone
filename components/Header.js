@@ -85,7 +85,7 @@ const Header = () => {
     <div className={classes.headerContainer}>
       <div className={classes.headerLogo}>
         <Link href="/">
-          <img src="/logo.svg" alt="Ualá logo" />
+          <img src="images/logo.svg" alt="Ualá logo" />
         </Link>
       </div>
       <div className={classes.headerMenu}>
