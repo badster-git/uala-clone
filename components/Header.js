@@ -113,7 +113,7 @@ const Header = () => {
                     <li>The Card</li>
                   </Link>
                   <Link href="/payments">
-                    <li>Payments and Chargebacks</li>
+                    <li>Payments</li>
                   </Link>
                   <Link href="/transfers">
                     <li>Transfers</li>
