@@ -56,8 +56,8 @@ export default function InvestmentsLiberty() {
           </div>
           <div className={classes.texts}>
             <p>
-              Cuando quieras usar tu plata, la liberás en el acto y listo. A
-              cualquier hora y en cualquier lugar.
+              When you want to use your money, you can withdraw it on the spot
+              and that's it. Anytime and anywhere.
             </p>
           </div>
         </div>
