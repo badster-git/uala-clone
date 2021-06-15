@@ -1,3 +1,13 @@
 body {
-    background-color: white !important;
+  background-color: white !important;
+}
+
+@media only screen and (min-width: 1080px) {
+  .alignCenterDesktop {
+    align-items: center;
+  }
+}
+
+.alignCenter {
+  align-items: center;
 }

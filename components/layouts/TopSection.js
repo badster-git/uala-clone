@@ -1,16 +1,11 @@
+import MarginContainer from "./MarginContainer";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-  marginContainer: {
-    display: "flex",
-    maxWidth: "1080px",
-    margin: "0 auto",
-    padding: "90px 0",
-    "&.homeContainer": {
-      marginBottom: "120px",
-    },
-  },
   leftContainer: {
+    flexBasis: "50%",
+  },
+  rightContainer: {
     flexBasis: "50%",
   },
   titlePrimary: {
@@ -32,20 +27,12 @@ const useStyles = makeStyles({
       color: "blue",
     },
   },
-  stores: {
-    display: "flex",
-    alignItems: "center",
-    marginTop: "24px",
-  },
-  store: {
-    marginRight: "32px",
-  },
 });
 
 export default function TopSection({ title, subtitle, blue, src }) {
   const classes = useStyles();
   return (
-    <section className={`homeContainer ${classes.marginContainer}`}>
+    <MarginContainer>
       <div className={classes.leftContainer}>
         <h3 className={classes.titlePrimary}>{title}</h3>
         <div className={classes.subtitle}>{subtitle}</div>
@@ -57,11 +44,11 @@ export default function TopSection({ title, subtitle, blue, src }) {
           </div>
         )}
       </div>
-      <div>
+      <div className={classes.rightContainer}>
         <div>
           <img src={src} alt="Animation" />
         </div>
       </div>
-    </section>
+    </MarginContainer>
   );
 }
