@@ -35,7 +35,11 @@ export default function TopSection({ title, subtitle, blue, src }) {
     <MarginContainer>
       <div className={classes.leftContainer}>
         <h3 className={classes.titlePrimary}>{title}</h3>
-        <div className={classes.subtitle}>{subtitle}</div>
+        <div className={classes.subtitle}>
+          {subtitle.map((text, idx) => (
+            <div key={idx}>{text}</div>
+          ))}
+        </div>
         {blue && (
           <div className={`blue ${classes.subtitle}`}>
             {blue.map((text, idx) => (
