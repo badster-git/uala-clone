@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
-import WaveContainer from "./WaveContainer";
+import WaveContainer from "../layouts/WaveContainer";
 
 const useStyles = makeStyles({
   marginContainer: {

@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
-import { USER_CARD_DATA } from "../data/USER_CARD_DATA";
-import UserCard from "./UserCard";
+import { USER_CARD_DATA } from "../../data/USER_CARD_DATA";
+import UserCard from "../layouts/UserCard";
 
 const useStyles = makeStyles({
   userContainer: {

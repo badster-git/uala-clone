@@ -1,5 +1,5 @@
-import Layout from "../components/layout";
-import Link from "../components/Link";
+import Layout from "../components/layouts/Layout";
+import Link from "../components/layouts/Link";
 
 import { makeStyles } from "@material-ui/styles";
 import { Container, Grid, Button } from "@material-ui/core";

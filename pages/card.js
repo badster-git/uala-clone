@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 
-import Layout from "../components/layout.js";
-import CardTop from "../components/CardTop";
+import Layout from "../components/layouts/Layout.js";
+import CardTop from "../components/card/CardTop";
 
 const useStyles = makeStyles({
   marginContainer: {

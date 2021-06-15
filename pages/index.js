@@ -1,11 +1,11 @@
-import Layout from "../components/layout";
+import Layout from "../components/layouts/Layout";
 import Head from "next/head";
-import IndexTop from "../components/IndexTop";
-import HowToJoin from "../components/HowToJoin";
-import Uses from "../components/Uses";
-import Phone from "../components/Phone";
-import Users from "../components/Users";
-import CustomerSupport from "../components/CustomerSupport";
+import IndexTop from "../components/index/IndexTop";
+import HowToJoin from "../components/index/HowToJoin";
+import Uses from "../components/index/Uses";
+import Phone from "../components/index/Phone";
+import Users from "../components/index/Users";
+import CustomerSupport from "../components/index/CustomerSupport";
 
 export default function Index() {
   return (

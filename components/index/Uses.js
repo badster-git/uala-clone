@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
-import UsesCard from "./UsesCard";
-import { USES_CARD_DATA } from "../data/USES_CARD_DATA";
+import UsesCard from "../layouts/UsesCard";
+import { USES_CARD_DATA } from "../../data/USES_CARD_DATA";
 
 const useStyles = makeStyles({
   sectionTitle: {
