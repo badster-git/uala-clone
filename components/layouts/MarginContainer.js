@@ -14,8 +14,8 @@ export default function MarginContainer(props) {
   return (
     <section
       className={`${props.alignStyle ? props.alignStyle : ""} ${
-        classes.marginContainer
-      }`}
+        props.container ? props.container : ""
+      } ${classes.marginContainer}`}
     >
       {props.children}
     </section>

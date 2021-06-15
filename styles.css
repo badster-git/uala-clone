@@ -2,6 +2,17 @@ body {
   background-color: white !important;
 }
 
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (min-width: 1080px) {
   .alignCenterDesktop {
     align-items: center;
@@ -10,4 +21,13 @@ body {
 
 .alignCenter {
   align-items: center;
+}
+
+.legalContainer {
+  flex-wrap: wrap;
+}
+
+.legalContainer p {
+  color: #888888;
+  line-height: 2;
 }
