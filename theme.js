@@ -13,6 +13,7 @@ const orange = "#ffa00a";
 const theme = createMuiTheme({
   palette: {
     common: {
+      mainBlue: mainBlue,
       black: mainBlack,
       white: mainWhite,
       blue: blue,

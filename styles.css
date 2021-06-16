@@ -19,6 +19,16 @@ ul {
   }
 }
 
+@media only screen and (min-width: 1080px) {
+  .mid {
+    width: 75%;
+  }
+}
+
+.wrapContainer {
+  flex-wrap: wrap;
+}
+
 .alignCenter {
   align-items: center;
 }

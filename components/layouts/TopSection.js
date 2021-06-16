@@ -29,16 +29,16 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TopSection({ title, subtitle, blue, src }) {
+export default function TopSection({ title, subtitle, blue, src, mid }) {
   const classes = useStyles();
   return (
     <MarginContainer>
       <div className={classes.leftContainer}>
         <h3 className={classes.titlePrimary}>{title}</h3>
-        <div className={classes.subtitle}>
-          {subtitle.map((text, idx) => (
-            <div key={idx}>{text}</div>
-          ))}
+        <div className={` ${mid ? "mid" : ""} ${classes.subtitle}`}>
+          {mid === true
+            ? subtitle
+            : subtitle.map((text, idx) => <div key={idx}>{text}</div>)}
         </div>
         {blue && (
           <div className={`blue ${classes.subtitle}`}>
