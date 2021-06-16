@@ -29,13 +29,20 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TopSection({ title, subtitle, blue, src, mid }) {
+export default function TopSection({
+  title,
+  subtitle,
+  blue,
+  src,
+  mid,
+  imgClass,
+}) {
   const classes = useStyles();
   return (
     <MarginContainer>
       <div className={classes.leftContainer}>
         <h3 className={classes.titlePrimary}>{title}</h3>
-        <div className={` ${mid ? "mid" : ""} ${classes.subtitle}`}>
+        <div className={`${mid ? "mid" : ""} ${classes.subtitle}`}>
           {mid === true
             ? subtitle
             : subtitle.map((text, idx) => <div key={idx}>{text}</div>)}
@@ -48,9 +55,13 @@ export default function TopSection({ title, subtitle, blue, src, mid }) {
           </div>
         )}
       </div>
-      <div className={classes.rightContainer}>
+      <div className={`${classes.rightContainer}`}>
         <div>
-          <img src={src} alt="Animation" />
+          <img
+            className={`${imgClass ? imgClass : ""}`}
+            src={src}
+            alt="Animation"
+          />
         </div>
       </div>
     </MarginContainer>

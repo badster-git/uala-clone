@@ -25,6 +25,12 @@ ul {
   }
 }
 
+@media (min-width: 1024px) {
+  .mt-16 {
+    margin-top: 4rem;
+  }
+}
+
 .alignCenter {
   align-items: center;
 }
@@ -37,6 +43,10 @@ ul {
   flex-wrap: wrap;
 }
 
+.centerContainer {
+  justify-content: center;
+}
+
 .legalContainer p {
   color: #888888;
   line-height: 2;
@@ -47,5 +57,10 @@ ul {
 }
 
 .cleanPaddingTop {
+  padding-top: 0 !important;
+}
+
+.btmTopPadding {
+  padding-bottom: 2.5rem !important;
   padding-top: 0 !important;
 }
