@@ -25,12 +25,12 @@ ul {
   }
 }
 
-.wrapContainer {
-  flex-wrap: wrap;
-}
-
 .alignCenter {
   align-items: center;
+}
+
+.wrapContainer {
+  flex-wrap: wrap;
 }
 
 .legalContainer {
@@ -40,4 +40,12 @@ ul {
 .legalContainer p {
   color: #888888;
   line-height: 2;
+}
+
+.creditsDataContainer {
+  line-height: 1.6;
+}
+
+.cleanPaddingTop {
+  padding-top: 0 !important;
 }

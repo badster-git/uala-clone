@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/styles";
 import { useState } from "react";
 
 import MarginContainer from "../layouts/MarginContainer";
+import LoanRequirements from "./LoanRequirements";
 
 const useStyles = makeStyles((theme) => ({
   leftContainer: {
@@ -70,136 +71,139 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CardDescription() {
   const classes = useStyles();
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState("loan");
 
   const handleChange = (e) => {
     setValue(e.target.id);
   };
 
   return (
-    <MarginContainer alignStyle={"wrapContainer"}>
-      <div className={classes.tabContainer}>
-        <div className={classes.tabs}>
-          <div
-            id="loan"
-            onClick={handleChange}
-            className={`${value === "loan" ? classes.active : ""} ${
-              classes.tab
-            }`}
-          >
-            Loans
-          </div>
-          <div
-            id="payments"
-            onClick={handleChange}
-            className={`${value === "payments" ? classes.active : ""} ${
-              classes.tab
-            }`}
-          >
-            Payments
-          </div>
-        </div>
-      </div>
-      {/** TODO: Change this to a layout component to improve readability */}
-      {value === "loan" ? (
-        <div id="loanContainer" className={classes.aboutDataContainer}>
-          <div className={classes.leftContainer}>
-            <div className={classes.textGray}>Loans</div>
-            <p className={classes.texts}>
-              Simulate your loan of up to $500,000 from the app, make the
-              request and receive the money in your account.
-            </p>
-            <p className={classes.arrow}>
-              <FaChevronRight
-                style={{
-                  color: "#3e6bfd",
-                  marginRight: "12px",
-                  lineHeight: "1",
-                  fontWeight: "900",
-                }}
-              />
-              The money deposity in your Ualá.
-            </p>
-            <p className={classes.arrow}>
-              <FaChevronRight
-                style={{
-                  color: "#3e6bfd",
-                  marginRight: "12px",
-                  lineHeight: "1",
-                  fontWeight: "900",
-                }}
-              />
-              The fees are fixed and you choose which day they expire.
-            </p>
-            <p className={classes.arrow}>
-              <FaChevronRight
-                style={{
-                  color: "#3e6bfd",
-                  marginRight: "12px",
-                  lineHeight: "1",
-                  fontWeight: "900",
-                }}
-              />
-              You can transfer the money to another account or use it for
-              whatever you want.
-            </p>
-          </div>
-          <div className={classes.rightContainer}>
-            <div className={classes.imageContainer}>
-              <img src="images/credits-phone.svg" alt="Credits Image" />
+    <>
+      <MarginContainer alignStyle={"wrapContainer"}>
+        <div className={classes.tabContainer}>
+          <div className={classes.tabs}>
+            <div
+              id="loan"
+              onClick={handleChange}
+              className={`${value === "loan" ? classes.active : ""} ${
+                classes.tab
+              }`}
+            >
+              Loans
+            </div>
+            <div
+              id="payments"
+              onClick={handleChange}
+              className={`${value === "payments" ? classes.active : ""} ${
+                classes.tab
+              }`}
+            >
+              Payments
             </div>
           </div>
         </div>
-      ) : (
-        <div id="paymentsContainer" className={classes.aboutDataContainer}>
-          <div className={classes.leftContainer}>
-            <div className={classes.textGray}>Payments</div>
-            <p className={classes.texts}>
-              Buy now and pay later. Enter a payment that you have already made
-              and we will return the money the same day.
-            </p>
-            <p className={classes.arrow}>
-              <FaChevronRight
-                style={{
-                  color: "#3e6bfd",
-                  marginRight: "12px",
-                  lineHeight: "1",
-                  fontWeight: "900",
-                }}
-              />
-              Put your purchases, payment of bills or recharges into
-              installments.
-            </p>
-            <p className={classes.arrow}>
-              <FaChevronRight
-                style={{
-                  color: "#3e6bfd",
-                  marginRight: "12px",
-                  lineHeight: "1",
-                  fontWeight: "900",
-                }}
-              />
-              You choose the amount of fees and expiration date.
-            </p>
-            <p className={classes.arrow}>
-              <FaChevronRight
-                style={{
-                  color: "#3e6bfd",
-                  marginRight: "12px",
-                  lineHeight: "1",
-                  fontWeight: "900",
-                }}
-              />
-              We will return the money to you on the spot.
-            </p>
-          </div>
-          <div className={classes.rightContainer}>
-            <div className={classes.imageContainer}>
-              <img src="images/celular-cuotas.png" alt="Payments Image" />
+        {/** TODO: Change this to a layout component to improve readability*/}
+        {value === "loan" ? (
+          <div id="loanContainer" className={classes.aboutDataContainer}>
+            <div className={classes.leftContainer}>
+              <div className={classes.textGray}>Loans</div>
+              <p className={classes.texts}>
+                Simulate your loan of up to $500,000 from the app, make the
+                request and receive the money in your account.
+              </p>
+              <p className={classes.arrow}>
+                <FaChevronRight
+                  style={{
+                    color: "#3e6bfd",
+                    marginRight: "12px",
+                    lineHeight: "1",
+                    fontWeight: "900",
+                  }}
+                />
+                The money deposity in your Ualá.
+              </p>
+              <p className={classes.arrow}>
+                <FaChevronRight
+                  style={{
+                    color: "#3e6bfd",
+                    marginRight: "12px",
+                    lineHeight: "1",
+                    fontWeight: "900",
+                  }}
+                />
+                The fees are fixed and you choose which day they expire.
+              </p>
+              <p className={classes.arrow}>
+                <FaChevronRight
+                  style={{
+                    color: "#3e6bfd",
+                    marginRight: "12px",
+                    lineHeight: "1",
+                    fontWeight: "900",
+                  }}
+                />
+                You can transfer the money to another account or use it for
+                whatever you want.
+              </p>
+            </div>
+            <div className={classes.rightContainer}>
+              <div className={classes.imageContainer}>
+                <img src="images/credits-phone.svg" alt="Credits Image" />
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </MarginContainer>
+        ) : (
+          <div id="paymentsContainer" className={classes.aboutDataContainer}>
+            <div className={classes.leftContainer}>
+              <div className={classes.textGray}>Payments</div>
+              <p className={classes.texts}>
+                Buy now and pay later. Enter a payment that you have already
+                made and we will return the money the same day.
+              </p>
+              <p className={classes.arrow}>
+                <FaChevronRight
+                  style={{
+                    color: "#3e6bfd",
+                    marginRight: "12px",
+                    lineHeight: "1",
+                    fontWeight: "900",
+                  }}
+                />
+                Put your purchases, payment of bills or recharges into
+                installments.
+              </p>
+              <p className={classes.arrow}>
+                <FaChevronRight
+                  style={{
+                    color: "#3e6bfd",
+                    marginRight: "12px",
+                    lineHeight: "1",
+                    fontWeight: "900",
+                  }}
+                />
+                You choose the amount of fees and expiration date.
+              </p>
+              <p className={classes.arrow}>
+                <FaChevronRight
+                  style={{
+                    color: "#3e6bfd",
+                    marginRight: "12px",
+                    lineHeight: "1",
+                    fontWeight: "900",
+                  }}
+                />
+                We will return the money to you on the spot.
+              </p>
+            </div>
+            <div className={classes.rightContainer}>
+              <div className={classes.imageContainer}>
+                <img src="images/celular-cuotas.png" alt="Payments Image" />
+              </div>
+            </div>
+          </div>
+        )}
+      </MarginContainer>
+      {value === "loan" && <LoanRequirements />}
+    </>
   );
 }
