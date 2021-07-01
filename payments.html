@@ -1,0 +1,594 @@
+<!DOCTYPE html><html lang="en"><head><meta name="theme-color" content="#000"/><link rel="stylesheet" data-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"/><meta charSet="utf-8"/><meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="manifest" href="/site.webmanifest"/><meta name="msapplication-TileColor" content="#000000"/><meta name="theme-color" content="#000000"/><meta name="google-site-verification" content="qPqoU-YM5jV7m1lihsOU4_2exKPheU7Rj2AHVqX90_E"/><meta property="og:type" content="website"/><meta property="og:image:type" content="image/png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="Ualá clone"/><meta property="og:site_name" content="Ualá clone"/><title>Ualá - Payments | Clone</title><link rel="icon" href="favicon.ico"/><meta name="og:title" content="Ualá - Payments | Clone"/><meta name="next-head-count" content="18"/><link rel="preload" href="/_next/static/css/909f1a6b116ea0f6cd01.css" as="style"/><link rel="stylesheet" href="/_next/static/css/909f1a6b116ea0f6cd01.css" data-n-g=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/webpack-2b3c4de09ee17921c190.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework-faba0c9bccda5edcf89b.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons-7ce9a2dbb0342421ba74.js" as="script"/><link rel="preload" href="/_next/static/chunks/main-0de92627d1a8c154924b.js" as="script"/><link rel="preload" href="/_next/static/chunks/92-95ba4002a0a3227d7687.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-224851c63ecf3c3cafcd.js" as="script"/><link rel="preload" href="/_next/static/chunks/d0447323-558e13cd4158cb5a53c0.js" as="script"/><link rel="preload" href="/_next/static/chunks/1bfc9850-ab3109efc6ed3d881ac4.js" as="script"/><link rel="preload" href="/_next/static/chunks/172-2792211485fdeadf0de0.js" as="script"/><link rel="preload" href="/_next/static/chunks/389-4ff6cf766af794b30a16.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/payments-bc22f03bd5517faef5f4.js" as="script"/><style id="jss-server-side">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media (max-width:959.95px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width:599.95px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 18px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+@media (max-width:959.95px) {
+  .MuiTypography-body2 {
+    font-size: 16px;
+  }
+}
+@media (max-width:599.95px) {
+  .MuiTypography-body2 {
+    font-size: 14px;
+  }
+}
+  .MuiTypography-body1 {
+    font-size: 22px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+@media (max-width:959.95px) {
+  .MuiTypography-body1 {
+    font-size: 20px;
+  }
+}
+@media (max-width:599.95px) {
+  .MuiTypography-body1 {
+    font-size: 18px;
+  }
+}
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    background: #3e6bfd;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: none;
+  }
+  .MuiTypography-button.MuiButton-text {
+    padding:  6px 16px !important;
+  }
+  .MuiTypography-button.MuiButton-root:hover {
+    background-color: #073df0 !important;
+  }
+  .MuiTypography-button .MuiButton-label {
+    color: #fff !important;
+  }
+  .MuiTypography-h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+  }
+@media (max-width:959.95px) {
+  .MuiTypography-h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:599.95px) {
+  .MuiTypography-h1 {
+    font-size: 1.75rem;
+  }
+}
+  .MuiTypography-h2 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+  }
+@media (max-width:959.95px) {
+  .MuiTypography-h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:599.95px) {
+  .MuiTypography-h2 {
+    font-size: 1.25rem;
+  }
+}
+  .MuiTypography-h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: 0em;
+  }
+@media (max-width:959.95px) {
+  .MuiTypography-h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width:599.95px) {
+  .MuiTypography-h3 {
+    font-size: 1rem;
+  }
+}
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #000;
+  }
+  .MuiTypography-colorSecondary {
+    color: #fff;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #ffa00a;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .jss1 {
+    background-color: white;
+  }
+  .jss2 {
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1080px;
+  }
+  .jss3 {
+    display: flex;
+    flex-basis: 200px;
+    align-items: flex-end;
+  }
+  .jss4 {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    margin-right: 32px;
+    justify-content: flex-end;
+  }
+  .jss5 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .jss6 {
+    color: #707070;
+    position: relative;
+    font-size: 17px;
+    text-align: right;
+    margin-left: 48px;
+  }
+  .jss7 {
+    cursor: pointer;
+  }
+  .jss8 {
+    width: 100%;
+    height: 16px;
+    position: absolute;
+  }
+  .jss9 {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-28px, 0px);
+    box-shadow: 0px 0px 8px #d2d2d2;
+    margin-top: 16px;
+    border-radius: 6px;
+    background-color: white;
+  }
+  .jss10 {
+    display: flex;
+    padding: 16px 0;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .jss10 a {
+    color: #707070;
+    flex-basis: 100%;
+  }
+  .jss10 li {
+    cursor: pointer;
+    display: flex;
+    padding: 8px 28px;
+    z-index: 5;
+    flex-basis: 100%;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .jss10 li:hover {
+    background-color: #F5F5F5;
+  }
+  .jss39 {
+    width: 100%;
+    position: absolute;
+  }
+  .jss40 {
+    background: url(images/waveTopDesktopGray.svg) top /100% auto, linear-gradient(#eeeeee, #eeeeee) content-box;
+    margin-top: 128px;
+    padding-top: 4vw;
+    background-repeat: no-repeat;
+  }
+  .jss41 {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    max-width: 1080px;
+    margin-top: 64px;
+    align-items: center;
+  }
+  .jss42 {
+    height: calc(100% - 42px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+    align-content: flex-end;
+    padding-bottom: 42px;
+  }
+  .jss43 {
+    height: calc(100% - 42px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+    align-content: flex-end;
+    padding-bottom: 42px;
+  }
+  .jss44 {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .jss44 li {
+    flex-basis: 100%;
+    margin-bottom: 12px;
+  }
+  .jss45 {
+    color: #656565;
+  }
+  .jss46 {
+    color: #3e6bfd;
+  }
+  .jss47 {
+    color: #3e6bfd;
+    font-size: 14px;
+    margin-top: 64px;
+  }
+  .jss48 {
+    height: calc(100% - 42px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+    align-content: flex-end;
+    padding-bottom: 42px;
+  }
+  .jss49 {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0,1fr));
+  }
+  .jss50 {
+    grid-column: span 2/span 2;
+    margin-right: 16px;
+  }
+  .jss50 img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .jss51 {
+    color: #6b6b6b;
+    grid-column: span 6/span 6;
+  }
+  .jss52 {
+    flex-basis: 100%;
+  }
+  .jss52 img {
+    height: auto;
+    max-width: 100%;
+  }
+  .jss53 {
+    font-size: 32px;
+    flex-basis: 100%;
+    margin-top: 24px;
+  }
+  .jss53 a {
+    color: #9a9a9a;
+    margin-right: 5px;
+  }
+  .jss54 {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 72px;
+  }
+  .jss55 {
+    margin-right: 12px;
+  }
+  .jss56 {
+    color: #737373;
+    font-size: 14px;
+    margin-top: 64px;
+  }
+  .jss15 {
+    margin: 0 auto;
+    display: flex;
+    padding: 90px 0;
+    max-width: 1080px;
+  }
+  .jss11 {
+    flex-basis: 50%;
+  }
+  .jss12 {
+    flex-basis: 50%;
+  }
+  .jss13 {
+    color: #3e6bfd;
+    font-size: 48px;
+    margin-top: 4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-right: 15%;
+  }
+  .jss14 {
+    color: grey;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .jss14.blue {
+    color: blue;
+    margin-top: 16px;
+  }
+  .jss31 {
+    background: url(images/waveTopDesktopBlue.svg) top/100% auto, url(images/waveBottomDesktopBlue.svg) bottom/100%, linear-gradient(#dee8ff, #f2f7ff) content-box;
+    padding-top: 4vw;
+    padding-bottom: 3.2vw;
+    background-repeat: no-repeat;
+  }
+  .jss16 {
+    flex-basis: 50%;
+  }
+  .jss17 img {
+    width: 90%;
+  }
+  .jss18 {
+    flex-basis: 50%;
+  }
+  .jss19 {
+    margin-left: 48px;
+  }
+  .jss20 img {
+    width: 68px;
+  }
+  .jss21 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .jss22 {
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  .jss23 {
+    color: #747474;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .jss24 {
+    flex-basis: 50%;
+  }
+  .jss25 {
+    flex-basis: 50%;
+  }
+  .jss26 {
+    margin-right: 48px;
+  }
+  .jss27 img {
+    width: 68px;
+  }
+  .jss28 {
+    color: #3a3a3a;
+    font-size: 28px;
+    margin-top: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  .jss29 {
+    color: #747474;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .jss30 img {
+    width: 90%;
+  }
+  .jss32 {
+    flex-basis: 50%;
+  }
+  .jss33 {
+    flex-basis: 50%;
+  }
+  .jss34 {
+    margin-left: 48px;
+  }
+  .jss35 img {
+    width: 68px;
+  }
+  .jss36 {
+    color: #3a3a3a;
+    font-size: 28px;
+    margin-top: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  .jss37 {
+    color: #747474;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .jss38 img {
+    width: 90%;
+  }</style><style data-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format('woff')}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff')}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format('woff')}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format('woff')}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style></head><body><div id="__next"><div class="jss2"><div class="jss3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" style="text-decoration:none" href="/"><img src="images/logo.svg" alt="Ualá logo"/></a></div><div class="jss4"><div class="jss5"><div class="jss6"><div class="functions-list jss7">Functions</div><div class="jss8"></div></div><div class="jss6"><div class="help-list jss7">Help and Security</div><div class="jss8"></div></div><div class="jss6"><div class="about-list jss7">About Ualá</div><div class="jss8"></div></div><div class="jss6"><div class="jss7">Costs</div><div class="jss8"></div></div><div class="jss6"><div class="jss7">Promotions</div><div class="jss8"></div></div></div></div></div><main><section class="  jss15"><div class="jss11"><h3 class="jss13">All your payments in one place</h3><div class=" jss14"><div>Recharge your prepaid services,</div><div>pay your bills or upload to SUBE</div><div>and without leaving your home.</div></div></div><div class="jss12"><div><img class="" src="images/payment.gif" alt="Animation"/></div></div></section><section class="  jss15"><div class="jss16"><a class="jss17" target="_blank" href="https://www.youtube.com/watch?v=JHPgGXXSSwY"><img src="images/video-como-recargar.svg" alt="Video player"/></a></div><div class="jss18"><div class="jss19"><div class="jss20"><img src="images/iconRecarga.svg" alt="Recharge icon"/></div><div class="jss21 jss22">Recharge your cell phone or TV</div><div class="jss23"><div>Use your prepaid services without limits.</div><div>Top up credit on your cell phone or prepaid TV</div><div>from the app and is credited on the spot.</div></div></div></div></section><section class="jss31"><section class="  jss15"><div class="jss24"><div class="jss26"><div class="jss27"><img src="images/iconFactura.svg" svg="Bill Icon"/></div><div class="jss28">Pay your bills</div><div class="jss29"><div>There are more than 4,000 services available</div><div>whenever you want. You scan the</div><div>invoice or search by item or company.</div></div></div></div><div class="jss25"><a class="jss30" target="_blank" href="https://www.youtube.com/watch?v=CAd2AnOTsBU"><img src="images/videoFacturas.svg" alt="Video player"/></a></div></section></section><section class="  jss15"><div class="jss32"><a class="jss38" target="_blank" href="https://www.youtube.com/watch?v=HsEbrmVWqNI"><img src="images/video-cargar-sube.svg" alt="Video player"/></a></div><div class="jss33"><div class="jss34"><div class="jss35"><img src="images/iconSube.svg" svg="Bill Icon"/></div><div class="jss36">Charge your SUBE</div><div class="jss37"><div>Don&#x27;t run out of money in SUBE. Load</div><div>from the app and credit the amount in a</div><div>SUBE automatic terminal or</div><div>mobile connection.</div></div></div></div></section></main><footer class="jss39"><div class="jss40"><div class="jss41"><div class="jss42"><div class="jss52"><img src="images/logo2.png" alt="Uala Logo"/></div><div class="jss53"><a target="_BLANK" href="https://www.instagram.com/uala_arg/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg></a><a target="_BLANK" href="https://www.facebook.com/uala.arg/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg></a><a target="_BLANK" href="https://twitter.com/uala_arg"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a target="_BLANK" href="https://www.linkedin.com/company/ual%C3%A1/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a target="_BLANK" href="https://www.youtube.com/channel/UCYFkMsPU2HvERxI-gHqzLxg"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a></div><div class="jss54"><a href="https://uala.onelink.me/Mhko/49dd979f" class="jss55"><img src="/images/applestore.png" alt=""/></a><a href="https://uala.onelink.me/Mhko/49dd979f" class="jss55"><img src="images/androidstore.png" alt=""/></a></div></div><div class="jss43"><ul class="jss44"><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" style="text-decoration:none" href="/jobs">Jobs</a></li><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" style="text-decoration:none" href="/tyc.html">Terms of service</a></li><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" target="_BLANK" style="text-decoration:none" href="http://comunidad.uala.com.ar">Ualá Community</a></li><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" style="text-decoration:none" href="/privacy.html">Privacy</a></li><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" target="_BLANK" style="text-decoration:none" href="http://blog.uala.com.ar">Ualá Blog</a></li><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" style="text-decoration:none" href="/contracts">Contratos de Adhesión - Ley N° 24.240 de Defensa del Consumidor</a></li><li><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss45 MuiTypography-colorPrimary" style="text-decoration:none" href="/payments#">Consumer Defense</a></li></ul><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss47 MuiTypography-colorPrimary" target="_BLANK" style="text-decoration:none" href="http://sticker.ly/s/OO1MGN">Download our WhatsApp stickers</a></div><div class="jss48"><div class="jss49"><div class="jss50"><img src="images/aaip.png"/></div><div class="jss51">Ualá is a Payment Service Provider and is not authorized by the BCRA to operate as a financial entity.<!-- --> <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss46 MuiTypography-colorPrimary" style="text-decoration:none" href="/legal">More info here</a>.</div></div><div class="jss56"><div>ALAU TECNOLOGÍA S.A.U. - CUIT 30-71542170-0</div><div>Ualá © 2020 , Todos los derechos reservados.</div><div>Nicaragua 4677 , C1414BVG CABA, Argentina.</div></div></div></div></div></footer></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/payments","query":{},"buildId":"PSru6OE2y5pRc-v6OCDtG","nextExport":true,"autoExport":true,"isFallback":false}</script><script nomodule="" src="/_next/static/chunks/polyfills-8683bd742a84c1edd48c.js"></script><script src="/_next/static/chunks/webpack-2b3c4de09ee17921c190.js" async=""></script><script src="/_next/static/chunks/framework-faba0c9bccda5edcf89b.js" async=""></script><script src="/_next/static/chunks/commons-7ce9a2dbb0342421ba74.js" async=""></script><script src="/_next/static/chunks/main-0de92627d1a8c154924b.js" async=""></script><script src="/_next/static/chunks/92-95ba4002a0a3227d7687.js" async=""></script><script src="/_next/static/chunks/pages/_app-224851c63ecf3c3cafcd.js" async=""></script><script src="/_next/static/chunks/d0447323-558e13cd4158cb5a53c0.js" async=""></script><script src="/_next/static/chunks/1bfc9850-ab3109efc6ed3d881ac4.js" async=""></script><script src="/_next/static/chunks/172-2792211485fdeadf0de0.js" async=""></script><script src="/_next/static/chunks/389-4ff6cf766af794b30a16.js" async=""></script><script src="/_next/static/chunks/pages/payments-bc22f03bd5517faef5f4.js" async=""></script><script src="/_next/static/PSru6OE2y5pRc-v6OCDtG/_buildManifest.js" async=""></script><script src="/_next/static/PSru6OE2y5pRc-v6OCDtG/_ssgManifest.js" async=""></script></body></html>
