@@ -11,6 +11,17 @@ const blue = "#757ce8";
 const orange = "#ffa00a";
 // Create a theme instance.
 const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      mf: 1024,
+      mt: 1080,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
   palette: {
     common: {
       mainBlue: mainBlue,
